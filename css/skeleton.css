@@ -164,7 +164,7 @@ h4 { font-size: 2.4rem; line-height: 1.35; letter-spacing: -.01rem; }
 h5 { font-size: 1.8rem; line-height: 1.5;  letter-spacing: 0; }
 h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
 
-.s1 { font-size: 1.1rem; line-height: 1.8;  letter-spacing: .01rem; margin-top: 2rem; }
+.s1 { font-size: 1.1rem; line-height: 1.8;  letter-spacing: .01rem; margin-bottom: 2rem; margin-top: .5rem !important }
 
 /* Larger than phablet */
 @media (min-width: 550px) {

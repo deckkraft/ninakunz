@@ -1,0 +1,55 @@
+# =============================================
+# MODERATION
+# Neue Einträge OBEN anfügen.
+#
+# Beispiel:
+#   - datum: "17.9.2024"
+#     text: "Michelle Steinbeck, «Favorita», Literaturhaus Basel"
+# =============================================
+
+eintraege:
+  - datum: "17.9.2024"
+    text: "Michelle Steinbeck, «Favorita», Literaturhaus Basel"
+
+  - datum: "27.8.2024"
+    text: "Deborah Levy, «Die Position der Löffel», Kaufleuten Zürich"
+
+  - datum: "25.5.2024"
+    text: "Chantal-Fleur Sandjon, «Die Sonne, so strahlend und Schwarz», Schauspielhaus Zürich"
+
+  - datum: "2.2.2024"
+    text: "Henri Maximilian Jakobs, «Paradiesische Zustände», Schauspielhaus Zürich"
+
+  - datum: "Dezember 2023"
+    text: "Lesereise mit Luisa Neubauer, «Gegen die Ohnmacht», Pfefferberg Theater Berlin, Waschhaus Potsdam, Gebläsehalle Duisburg, Gloria Köln, Markthalle Hamburg"
+
+  - datum: "18.11.2023"
+    text: "Deborah Levy, «Augustblau», Buch Basel"
+
+  - datum: "5.9.2023"
+    text: "Dana Vowinckel, «Gewässer im Ziplock», Literaturhaus Berlin"
+
+  - datum: "16.9.2023"
+    text: "Necati Öziri, «Vatermal», Schauspielhaus Zürich"
+
+  - datum: "27.2.2023"
+    text: "Simon Fröhling, «Dürrst», Schauspielhaus Zürich"
+
+  - datum: "17.1.2023"
+    text: "Theresia Enzensberger, «Auf See», Schauspielhaus Zürich"
+
+  - datum: "1.12.2022"
+    text: "Hengameh Yaghoobifarah, «Das Ministerium der Träume», Schauspielhaus Zürich"
+
+  - datum: "1.11.2022"
+    text: "Sharon Dodua Otoo, «Adas Raum», Schauspielhaus Zürich"
+
+  - datum: "27.10.2022"
+    text: "Calla Henkel, «Other People's Clothes», Zürich liest"
+
+fotos:
+  - bild: "images/Luisa-Neubauer_Foto-Anna-Sommer_max-5361_w.jpg"
+    beschriftung: "Luisa Neubauer und Nina Kunz. Foto: Anna Sommer"
+
+  - bild: "images/Sophie-Tichonenko_BuchBasel2023_Deborah_Levy.jpg"
+    beschriftung: "Moderation mit Deborah Levy. Foto: Sophie Tichonenko"

@@ -1,2 +1,6 @@
 title: "Nina Kunz"
 url: "https://ninakunz.ch"
+exclude:
+  - ANLEITUNG.md
+  - Gemfile
+  - Gemfile.lock

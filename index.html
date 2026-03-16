@@ -1,165 +1,87 @@
 ---
+layout: default
 ---
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Nina Kunz «{{ site.data.buch.titel }}»</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Karla:ital@0;1&display=swap" rel="stylesheet">
+<!-- HEADER -->
+<header>
+  <h1>Nina Kunz</h1>
+  <nav>
+    <h5>
+      <a href="#buch">Buch</a>
+      <a href="#texte">Texte</a>
+      <a href="#termine">Termine</a>
+      <a href="#auftritte">Auftritte</a>
+      <a href="#moderation">Moderation</a>
+      <a href="#lesungen">Lesungen</a>
+      <a href="#kontakt">Kontakt</a>
+    </h5>
+  </nav>
+</header>
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
+<!-- BUCH -->
+<section>
+  <a href="{{ site.data.buch.link }}">
+    <img class="phone" src="{{ site.data.buch.bild }}">
+  </a>
+  <p>
+    <a href="{{ site.data.buch.link }}">{{ site.data.buch.titel }}</a><br>
+    {{ site.data.buch.verlag }}<br>
+    {%- for ausgabe in site.data.buch.ausgaben %}
+    {{ ausgabe.format }}, {{ ausgabe.jahr }}, {{ ausgabe.seiten }} Seiten<br>
+    ISBN {{ ausgabe.isbn }}<br>
+    {%- endfor %}
+  </p>
+  <p>
+    {{ site.data.buch.hinweis }}<br>
+    {%- for shop in site.data.buch.bestellen %}
+    <a href="{{ shop.link }}">{{ shop.text }}</a><br>
+    {%- endfor %}
+  </p>
+</section>
 
-  <!-- Favicon -->
-  <link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="images/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-  <link rel="manifest" href="images/manifest.json">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="images/ms-icon-144x144.png">
-  <meta name="theme-color" content="#ffffff">
+<!-- TEXTE -->
+<section>
+  <h3 id="texte">Texte von mir</h3>
+  {% include linklist.html items=site.data.texte %}
+</section>
 
-  <!-- Icons -->
-  <script src="https://kit.fontawesome.com/b27a46fac0.js" crossorigin="anonymous"></script>
-</head>
-<body>
-  <div class="container">
-    <div class="row">
+<!-- TERMINE -->
+<section>
+  <h3 id="termine">Termine</h3>
+  <p><a href="{{ site.data.termine.link }}">{{ site.data.termine.text }}</a></p>
+</section>
 
-      <!-- HEADER -->
-      <div class="twelve column" style="margin-top: 4rem">
-        <h1>Nina Kunz</h1>
-        <h5>
-          <a href="#buch">Buch</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#texte">Texte</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#termine">Termine</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#auftritte">Auftritte</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#moderation">Moderation</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#lesungen">Lesungen</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#kontakt">Kontakt</a>
-        </h5>
-      </div>
+<!-- AUFTRITTE -->
+<section>
+  <h3 id="auftritte">Auftritte</h3>
+  {% include eventlist.html items=site.data.auftritte %}
+</section>
 
-      <!-- BUCH -->
-      <div class="twelve columns">
-        <a href="{{ site.data.buch.link }}">
-          <img class="phone" src="{{ site.data.buch.bild }}">
-        </a>
-      </div>
-      <div class="twelve columns">
-        <p>
-          <a href="{{ site.data.buch.link }}">{{ site.data.buch.titel }}</a><br>
-          {{ site.data.buch.verlag }}<br>
-          {%- for ausgabe in site.data.buch.ausgaben %}
-          {{ ausgabe.format }}, {{ ausgabe.jahr }}, {{ ausgabe.seiten }} Seiten<br>
-          ISBN {{ ausgabe.isbn }}<br>
-          {%- endfor %}
-        </p>
-        <p>
-          {{ site.data.buch.hinweis }}<br>
-          {%- for shop in site.data.buch.bestellen %}
-          <a href="{{ shop.link }}">{{ shop.text }}</a><br>
-          {%- endfor %}
-        </p>
-      </div>
+<!-- MODERATION -->
+<section>
+  <h3 id="moderation">Moderation</h3>
+  {% include eventlist.html items=site.data.moderation.eintraege %}
+  {% include photos.html photos=site.data.moderation.fotos %}
+</section>
 
-      <!-- TEXTE -->
-      <div class="twelve columns">
-        <h3 id="texte">Texte von mir</h3>
-        <p>
-          {%- for eintrag in site.data.texte -%}
-          <a href="{{ eintrag.link }}">{{ eintrag.text }}</a>
-          {%- unless forloop.last %}<br>{% endunless -%}
-          {%- endfor %}
-        </p>
-      </div>
+<!-- LESUNGEN -->
+<section>
+  <h3 id="lesungen">Lesungen (Auswahl)</h3>
+  {% include eventlist.html items=site.data.lesungen.eintraege %}
+  {% include photos.html photos=site.data.lesungen.fotos %}
+</section>
 
-      <!-- TERMINE -->
-      <div class="twelve columns">
-        <h3 id="termine">Termine</h3>
-        <p><a href="{{ site.data.termine.link }}">{{ site.data.termine.text }}</a></p>
-      </div>
-
-      <!-- AUFTRITTE -->
-      <div class="twelve columns">
-        <h3 id="auftritte">Auftritte</h3>
-        <p>
-          {%- for a in site.data.auftritte -%}
-          {{ a.datum }}, {{ a.text }}{% if a.link %} <a href="{{ a.link }}">{{ a.linktext }}</a>{% endif %}
-          {%- unless forloop.last %}<br>{% endunless -%}
-          {%- endfor %}
-        </p>
-      </div>
-
-      <!-- MODERATION -->
-      <div class="twelve columns">
-        <h3 id="moderation">Moderation</h3>
-        <p>
-          {%- for m in site.data.moderation.eintraege -%}
-          {{ m.datum }}, {{ m.text }}
-          {%- unless forloop.last %}<br>{% endunless -%}
-          {%- endfor %}
-        </p>
-        <div class="eight columns offset-by-two">
-          {% for foto in site.data.moderation.fotos %}
-          <img class="phone" src="{{ foto.bild }}">
-          <div class="s1"><center>{{ foto.beschriftung }}</center></div>
-          {% endfor %}
-        </div>
-      </div>
-
-      <!-- LESUNGEN -->
-      <div class="twelve columns">
-        <h3 id="lesungen">Lesungen (Auswahl)</h3>
-        <p>
-          {%- for l in site.data.lesungen.eintraege -%}
-          {{ l.datum }}, {{ l.text }}
-          {%- unless forloop.last %}<br>{% endunless -%}
-          {%- endfor %}
-        </p>
-      </div>
-      <div class="eight columns offset-by-two">
-        {% for foto in site.data.lesungen.fotos %}
-        <img class="phone" src="{{ foto.bild }}">
-        <div class="s1"><center>{{ foto.beschriftung }}</center></div>
-        {% endfor %}
-      </div>
-
-      <!-- BIOGRAPHIE -->
-      <div class="twelve columns">
-        <h3 id="bio">Biographie</h3>
-        <div class="eight columns offset-by-two">
-          <p>{{ site.data.bio.text }}</p>
-          <img class="phone" src="{{ site.data.bio.foto.bild }}">
-          <div class="s1"><center>{{ site.data.bio.foto.beschriftung }}</center></div>
-        </div>
-      </div>
-
-      <!-- KONTAKT -->
-      <div class="twelve columns">
-        <h3 id="kontakt">Kontakt</h3>
-        <p>
-          {%- for k in site.data.kontakt -%}
-          <a href="{{ k.link }}">{{ k.text }}</a>
-          {%- unless forloop.last %}<br>{% endunless -%}
-          {%- endfor %}
-        </p>
-      </div>
-
-      <h3 id="footer">&nbsp;</h3>
-
-    </div>
+<!-- BIOGRAPHIE -->
+<section>
+  <h3 id="bio">Biographie</h3>
+  <div class="eight columns offset-by-two">
+    <p>{{ site.data.bio.text }}</p>
+    {% include photo.html foto=site.data.bio.foto %}
   </div>
-</body>
-</html>
+</section>
+
+<!-- KONTAKT -->
+<section>
+  <h3 id="kontakt">Kontakt</h3>
+  {% include linklist.html items=site.data.kontakt %}
+</section>

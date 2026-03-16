@@ -1,0 +1,6 @@
+<p>
+  {%- for item in include.items -%}
+  <a href="{{ item.link }}">{{ item.text }}</a>
+  {%- unless forloop.last %}<br>{% endunless -%}
+  {%- endfor %}
+</p>

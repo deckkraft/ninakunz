@@ -1,0 +1,70 @@
+# =============================================
+# LESUNGEN (Auswahl)
+# Neue Einträge OBEN anfügen.
+#
+# Beispiel:
+#   - datum: "13.7.2021"
+#     text: "Kaufleuten, Literaturfestival Zürich (CH)"
+# =============================================
+
+eintraege:
+  - datum: "13.7.2021"
+    text: "Kaufleuten, Literaturfestival Zürich (CH)"
+
+  - datum: "3.8.2021"
+    text: "Pfefferberg Theater, Berlin (DE)"
+
+  - datum: "17.9.2021"
+    text: "Lit Festival, Duisburg (DE)"
+
+  - datum: "26.9.2021"
+    text: "Buchladen, Frauenfeld (CH)"
+
+  - datum: "14.10.2021"
+    text: "House of Switzerland, Stuttgart (DE)"
+
+  - datum: "27.10.2021"
+    text: "Orell Füssli, Basel (CH)"
+
+  - datum: "6.11.2021"
+    text: "Bücher Stierle, Salzburg (AT)"
+
+  - datum: "7.11.2021"
+    text: "Zollhaus, Zürich (CH)"
+
+  - datum: "30.11.2021"
+    text: "Orell Füssli, Winterthur (CH)"
+
+  - datum: "23.3.2022"
+    text: "Zentralbibliothek Zürich (CH)"
+
+  - datum: "14.5.2022"
+    text: "Campusfestival, Konstanz (DE)"
+
+  - datum: "31.5.2022"
+    text: "Stadtbibliothek, Baden (CH)"
+
+  - datum: "2.6.2022"
+    text: "Theater am Gleis, Winterthur (CH)"
+
+  - datum: "25.6.2022"
+    text: "Zeughaus Kultur, Brig (CH)"
+
+  - datum: "29.10.2022"
+    text: "Festival Zürich liest (CH)"
+
+  - datum: "30.11.2022"
+    text: "Theater Chur, Chur (CH)"
+
+  - datum: "26.1.2023"
+    text: "House of Communication, München (DE)"
+
+  - datum: "4.8.23"
+    text: "Appletree Garden Festival, Diepholz (DE)"
+
+  - datum: "17.9.23"
+    text: "Kleintheater Luzern, Luzern (CH)"
+
+fotos:
+  - bild: "images/Appletree_Garden_Festival_Anna_Wyszomierska_w.jpg"
+    beschriftung: "Lesung am Appletree Garden Festival. Foto: Anna Wyszomierska"

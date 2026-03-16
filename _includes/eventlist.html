@@ -1,0 +1,6 @@
+<p>
+  {%- for item in include.items -%}
+  {{ item.datum }}, {{ item.text }}{% if item.link %} <a href="{{ item.link }}">{{ item.linktext }}</a>{% endif %}
+  {%- unless forloop.last %}<br>{% endunless -%}
+  {%- endfor %}
+</p>

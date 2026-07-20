@@ -1,5 +1,5 @@
 source "https://rubygems.org"
-gem "github-pages", group: :jekyll_plugins
-gem "csv"
-gem "base64"
-gem "bigdecimal"
+
+# Nur für die lokale Vorschau (bundle exec jekyll serve).
+# GitHub Pages ignoriert dieses Gemfile und baut mit der eigenen Jekyll-Version.
+gem "jekyll", "~> 4.4"

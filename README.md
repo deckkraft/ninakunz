@@ -26,7 +26,7 @@ Du brauchst **kein HTML** zu schreiben — nur die YAML-Dateien bearbeiten.
 | `lesungen.yml`     | Lesungen + Fotos                    |
 | `texte.yml`        | Links zu Publikationen              |
 | `termine.yml`      | Termin-Hinweis                      |
-| `buch.yml`         | Buchdetails + Bestelllinks          |
+| `buch.yml`         | Buchdetails                         |
 | `bio.yml`          | Biographie-Text + Foto             |
 | `kontakt.yml`      | Kontakt-Links                       |
 

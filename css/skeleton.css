@@ -119,6 +119,8 @@ a:hover {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto; }
+.cover {
+  max-width: 48%; }
 
 
 /* Header

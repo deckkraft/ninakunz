@@ -21,7 +21,7 @@ layout: default
 <!-- BUCH -->
 <section>
   <a href="{{ site.data.buch.link }}">
-    <img class="phone" src="{{ site.data.buch.bild }}">
+    <img class="phone cover" src="{{ site.data.buch.bild }}">
   </a>
   <p>
     <a href="{{ site.data.buch.link }}">{{ site.data.buch.titel }}</a><br>
@@ -29,12 +29,6 @@ layout: default
     {%- for ausgabe in site.data.buch.ausgaben %}
     {{ ausgabe.format }}, {{ ausgabe.jahr }}, {{ ausgabe.seiten }} Seiten<br>
     ISBN {{ ausgabe.isbn }}<br>
-    {%- endfor %}
-  </p>
-  <p>
-    {{ site.data.buch.hinweis }}<br>
-    {%- for shop in site.data.buch.bestellen %}
-    <a href="{{ shop.link }}">{{ shop.text }}</a><br>
     {%- endfor %}
   </p>
 </section>

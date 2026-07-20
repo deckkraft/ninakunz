@@ -8,6 +8,21 @@
 # =============================================
 
 eintraege:
+  - datum: "23.6.2026"
+    text: "Nussaibah Younis, «Fundamentalös», Literaturhaus Zürich"
+
+  - datum: "22.3.2026"
+    text: "Kae Tempest, «Ein Leben lang gesucht», Kaufleuten Zürich"
+
+  - datum: "9.12.2025"
+    text: "Joy Williams, «Stories 2», Literaturhaus Zürich"
+
+  - datum: "15.11.2025"
+    text: "Kate Zambreno, «Der helle Raum», Buch Basel"
+
+  - datum: "13.10.2025"
+    text: "Lea Ypi, «Aufrecht», Kaufleuten Zürich"
+
   - datum: "17.9.2024"
     text: "Michelle Steinbeck, «Favorita», Literaturhaus Basel"
 

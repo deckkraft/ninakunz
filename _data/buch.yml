@@ -5,7 +5,7 @@
 
 titel: "Ich denk, ich denk zu viel"
 link: "https://keinundaber.ch/de/autoren-regal/nina-kunz/ich-denk-ich-denk-zu-viel/1174"
-bild: "images/IDIDZ-Cover.jpg"
+bild: "images/ninakunz_ichdenkichdenkzuviel_hardcover-paperback.jpg"
 verlag: "Kein & Aber"
 
 ausgaben:
@@ -17,15 +17,3 @@ ausgaben:
     jahr: 2024
     seiten: 192
     isbn: "978-3-0369-6184-2"
-
-hinweis: "Im Buchhandel erhältlich:"
-
-bestellen:
-  - text: "Zürich: Bestellen bei Paranoia City"
-    link: "https://paranoiacity.ch/"
-  - text: "Zürich: Bestellen bei Volkshaus Buch"
-    link: "https://www.volkshausbuch.ch/"
-  - text: "Berlin: Bestellen bei She Said"
-    link: "https://www.shesaid.de/"
-  - text: "DE: Bestellen bei genialokal.de"
-    link: "https://genialokal.de/Produkt/Nina-Kunz/Ich-denk-ich-denk-zu-viel_lid_52687448.html"

@@ -4,11 +4,5 @@
 # und text + link anpassen.
 # =============================================
 
-- text: "Texte für das ZEITmagazin"
-  link: "https://www.zeit.de/autoren/K/Nina_Kunz/index"
-
-- text: "Kolumnen und Essays für Das Magazin (bis 2020)"
-  link: "https://www.dasmagazin.ch/author/nina-kunz/"
-
-- text: "Kolumnen für Das Magazin (ab 2020)"
-  link: "https://www.tagesanzeiger.ch/das-magazin/kolumnen"
+- text: "Texte für den Tages-Anzeiger und Das Magazin"
+  link: "https://www.tagesanzeiger.ch/author/43921382/nina-kunz"
